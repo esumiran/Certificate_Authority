@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certificate Validation</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/styles.css') }}">
+</head>
+
+
+<body>
+  <header>
+    <h1>Certificate Authority Portal</h1>
+  </header>
+
+  <div class="content">
+    <div class="form-container">
+      <form action="/submit_step1" method="POST">
+        <h2>
+          Submit Student ID (Encrypted with CA Public Key) and Student Public Key
+        </h2>
+        <input type="text" id="student_id_ca" name="student_id_ca" placeholder="Student ID encrypted with CA public key"
+          required /><br />
+        <input type="text" id="student_public_key" name="student_public_key" placeholder="Student public key"
+          required /><br />
+        <input type="submit" value="Register My Certificate" />
+      </form>
+
+      <form action="/student_validation" method="post">
+        <h3>OR</h3>
+        <div class="form-spacing">
+            <input type="submit" value="Verify Existing Certificate" />
+        </div>
+    </form>
+
+    </div>
+  </div>
+</body>
+
+
+
+</html>

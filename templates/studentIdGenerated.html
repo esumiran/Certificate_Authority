@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Success</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/styles.css') }}">
+</head>
+
+<body>
+    <header>
+
+        {% if flag %}
+        <h1>Student ID Already Exists</h1>
+        {% else %}
+        <h1>Success - Student ID Generated</h1>
+        {% endif %}
+
+    </header>
+
+    <div class="content">
+        <div class="message-container">
+            <p>Hi, {{ student_name }}, your student ID is - {{ id }}</p>
+            <p>Please note down your Student ID.</p>
+        </div>
+    </div>
+</body>
+
+</html>
+

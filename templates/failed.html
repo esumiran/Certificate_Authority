@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Success</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Oops! Verification Unsuccessful</h1>
+    </header>
+
+
+    <div class="content">
+        {% if source == 'A' %}
+        <div class="message-container">
+             <p>The Certificate could not be verified. Please review your details</p>
+        </div>
+
+         {% elif source == 'B' %}
+        <div class="message-container">
+            
+            </p>The Student ID - <strong>{{ student_id }} </strong> does not have a valid certificate.</p>
+        </div>
+
+        {% else %}
+            <p>Something went wrong! Please try again.</p> 
+        {% endif %}
+
+        <div class="form-container">
+            <form action="/" method="GET">
+                <p>or</p>
+                <div class="form-spacing">
+                    <input type="submit" value="Go to Home" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+
+
+
+</body>
+</html>

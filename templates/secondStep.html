@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certificate Validation</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/styles.css') }}">
+</head>
+
+
+<body>
+  <header>
+    <h1>Certificate Authority Portal</h1>
+  </header>
+
+  <div class="content">
+    <div class="form-container">
+      
+      <form action="/submit_step2" method="POST">
+        <h2>Digital Signature Verification</h2>
+        <input type="text" id="encrypted_student_private" name="encrypted_student_private"
+          placeholder="Student ID encrypted with private key" required /><br />
+        <input type="text" id="hash_value" name="hash_value" placeholder="Hash value of student ID" required /><br />
+        <input type="submit" value="Verify Certificate" />
+      </form>
+    </div>
+  </div>
+</body>
+
+
+
+</html>

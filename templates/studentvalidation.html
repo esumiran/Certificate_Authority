@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Validation</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/styles.css') }}">
+  </head>
+
+<body>
+    <header>
+      <h1>Certificate Validation Portal</h1>
+    </header>
+  
+    <div class="content">
+      <div class="form-container">
+        <form action="/submit_studentvalidation" method="POST">
+          <h2>
+            Submit Student ID you want to validate
+          </h2>
+          <input type="text" id="student_id" name="student_id" placeholder="Student ID"
+            required /><br />
+          <input type="submit" value="Validate" />
+        </form> 
+      </div>
+    </div>
+  </body>
+  
+
+</html>

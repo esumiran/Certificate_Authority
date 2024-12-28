@@ -1,0 +1,5 @@
+.python-version
+venv
+venv/
+app.log
+__pycache__

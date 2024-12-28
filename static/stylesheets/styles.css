@@ -1,0 +1,99 @@
+/* Resetting default margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #005035; /* Single background color for the entire page */
+    color: white; /* White text for contrast */
+    font-family: Arial, sans-serif;
+}
+
+/* Styling the header */
+header {
+    background-color: #005035; /* Match the header with the background */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header title styling */
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Centering the content */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    flex-direction: column;
+}
+
+/* Container for the form */
+.form-container {
+    text-align: center;
+}
+
+/* Styling the text inputs */
+input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    background-color: transparent; /* Transparent input background */
+    color: white; /* White text inside the input */
+}
+
+/* Styling the submit button */
+input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: white;
+    color: #005035;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Remove the default outline when clicking on input fields */
+input:focus {
+    outline: none;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    flex-direction: column;
+}
+
+/* Container for the message */
+.message-container {
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+/* Styling the success message */
+.message-container p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+/* Custom spacing for the form containing the button */
+.form-spacing {
+    margin-top: 30px; /* Adjust this value as needed for more or less space */
+}
+
+.scrollable-text {
+    max-height: 200px;  /* Adjust the height based on your design */
+    overflow-y: auto;   /* Adds a vertical scroll bar if the content exceeds the height */
+    word-wrap: break-word;  /* Ensures the text breaks if it's too long */
+    white-space: pre-wrap;  /* Preserves formatting with line breaks */
+    background-color: #005035; /* Optional: Add a background color for readability */
+    padding: 10px;  /* Optional: Add padding for a cleaner look */
+    border-radius: 5px;  /* Optional: Add rounded corners */
+}
